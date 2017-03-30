@@ -6,13 +6,13 @@
  * @version $Id$
  */
 #box{
-	height: 50px;
-	width: 200px;
-	margin: 10px;
+	height: 20px;
+	width: 400px;
+	background: lightgray;
 	padding: 10px;
 	
-	border:0.1px solid;
-	border-color: gray;
+	border:1px solid;
+	border-color: lightgray;
     font-family:consolas ;
 }
 #box1{
@@ -23,7 +23,7 @@
 	padding: 10px;
 	
 	border:1px solid;
-	border-color: gray;
+	border-color: lightgray;
     font-family:consolas ;
 }
 #box2{
@@ -34,45 +34,85 @@
 	padding: 10px;
 
 	border:1px solid;
-	border-color: gray;
+	border-color: lightgray;
     font-family:consolas ;
 
 }
-#box3{
-	background: red;
+#t1{
+	width: 400px;
+}
+#txt1{
+	float: left;
 	height: 5px;
 	width: 350px;
 	padding: 10px;
 	margin:1px;
-	border:1px solid;
-	border-color: gray;
+    border:1px solid;
+	border-color: lightgray;
     font-family:consolas ;
 
+}
+#txt2{
+	position: relative;
+	top:15px;
+	float: left;
+	height: 5px;
+	width: 250px;
+	padding: 10px;
+	margin:10px;
+    border:1px solid;
+	border-color: lightgray;
+    font-family:consolas ;
 }
 #box4{
+	position: relative;
+	top:10px;
 	float: left;
-	background: red;
-	height: 50px;
-	width: 50px;
+	background: lightgreen;
+	height: 90px;
+	width: 90px;
+
+	border-color: lightgray;
+    font-family:consolas ;
+}
+#box5{
+	float: left;
+	background: lightgreen;
+	height: 30px;
+	width: 30px;
 	padding: 10px;
-	margin:1px;
-	border:1px solid;
-	border-color: gray;
+	margin:20px;
+	border-color: lightgray;
     font-family:consolas ;
 
 }
-#box:before{
-	font-family:Microsoft yahei ;
-	content: "日期: ";
+#box6{
+	height: 300px;
+	width: 400px;
+	
+	padding: 10px;
+
+	border:1px solid;
+	border-color: lightgray;
+    font-family:consolas ;
+
 }
-#box:after{
-	position: relative;
-	bottom: -10px;
-	left:30px;
-	content: url(/img/4.png);
+#part1{
+	background: orange;
+	height: 10px;
+	width: 85px;
+	float: left;
+	margin:10px;
+	padding: 10px;
+    position: relative;
+    top:40px;
+	border:1px solid;
+	border-color: lightgray;
+    font-family:consolas ;
 }
 .clear{
 	clear: both;
 }
+
 
 
