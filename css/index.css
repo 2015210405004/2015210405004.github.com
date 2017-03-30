@@ -39,7 +39,7 @@
 
 }
 #box3{
-	background: black;
+	background: red;
 	height: 5px;
 	width: 350px;
 	padding: 10px;
@@ -51,7 +51,7 @@
 }
 #box4{
 	float: left;
-	background: black;
+	background: red;
 	height: 50px;
 	width: 50px;
 	padding: 10px;
