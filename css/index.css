@@ -6,21 +6,41 @@
  * @version $Id$
  */
 #box{
-	background: gray;
 	height: 50px;
-	width: 50px;
+	width: 200px;
 	margin: 10px;
 	padding: 10px;
 	float: left;
+	border:0.1px solid;
+	border-color: gray;
+    font-family:consolas ;
 }
-#box2{
-	background: gray;
-	height: 140px;
-	width: 140px;
+#box1{
+	background: lightgreen;
+	height: 50px;
+	width: 300px;
 	margin: 10px;
 	padding: 10px;
 	float: left;
-	
+	border:1px solid;
+	border-color: gray;
+    font-family:consolas ;
+}
+#box1:before{
+    border:1px solid;
+	border-color: black;
+    border-radius: 65px;
+
+}
+#box:before{
+	font-family:Microsoft yahei ;
+	content: "日期: ";
+}
+#box:after{
+	position: relative;
+	bottom: -10px;
+	left:30px;
+	content: url(/img/4.png);
 }
 .clear{
 	clear: both;
