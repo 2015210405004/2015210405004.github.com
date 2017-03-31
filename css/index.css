@@ -8,11 +8,13 @@
 #box{
 	height: 20px;
 	width: 400px;
-	background: lightgray;
 	padding: 10px;
-	
-	border:1px solid;
+	border:2px solid;
+    border-radius:10px;
+    -moz-border-radius:25px; /* Old Firefox */
 	border-color: lightgray;
+	box-shadow:5px 5px 9px #aaaaaa;
+	border-image:url("img/4.png") 30 30 round;
     font-family:consolas ;
 }
 #box1{
