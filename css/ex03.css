@@ -6,20 +6,17 @@
  * @version $Id$
  */
 #box{
-	height: 20px;
-	width: 400px;
-	background: lightgray;
-	padding: 10px;
+	height: 43px;
+	width: 420px;
 	
+
 	border:1px solid;
 	border-color: lightgray;
     font-family:consolas ;
 }
 #box1{
-
 	height: 50px;
 	width: 400px;
-	
 	padding: 10px;
 	
 	border:1px solid;
@@ -39,7 +36,12 @@
 
 }
 #t1{
+	position: relative;
+	top :-10px;
+	right: 10px;
+	height: 20px;
 	width: 400px;
+	background: white;
 }
 #txt1{
 	float: left;
@@ -68,7 +70,8 @@
 	position: relative;
 	top:10px;
 	float: left;
-	background: lightgreen;
+	background: #FF5809;
+	
 	height: 80px;
 	width: 80px;
      margin:5px;
@@ -76,8 +79,10 @@
     font-family:consolas ;
 }
 #box5{
+	position: relative;
+	bottom: 15px;
 	float: left;
-	background: lightgreen;
+	background: #FF5809;
 	height: 60px;
 	width: 60px;
 	padding: 0px;
@@ -97,21 +102,19 @@
 
 }
 #box7{
-	position: relative;
-	top:10px;
 	float: left;
-	background: lightgreen;
+	background: #FF5809;
+	
 	height: 100px;
-	width: 50px;
-     margin:45px;
+	width: 60px;
+     margin:50px;
 	border-color: lightgray;
     font-family:consolas ;
 }
-box:before{
-	content: "123";
-}
+
 #part1{
-	background: orange;
+	background: #FF5809;
+	
 	height: 10px;
 	width: 85px;
 	float: left;
@@ -126,6 +129,32 @@ box:before{
 .clear{
 	clear: both;
 }
+.button{
+	float: left;
+	
+    height: 43px;
+    width: 84px;
+   
+border:none;background:#ccc;display:block;
+margin: none;
+}
+.txt1{
+	font-family: Microsoft yahei;
+	color: black;
+	font-size:16px;
+	align-content: center;
+}
+.txt2{
+	position: relative;
+	top:100px;
+	font-size:16px;
+}
+.txt3{
 
+	position: relative;
+	top:60px;
+	left: 10px;
+	font-size:16px;
+}
 
 
