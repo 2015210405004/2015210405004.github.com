@@ -1,4 +1,4 @@
-#title{
+.title{
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -13,7 +13,9 @@
 	font-family: Consolas;
 	font-size: 70px;
 }
-#a{
+.a{
+	height: 100px;
+	width: 100px;
 	color: red;
     font-family: Microsoft yahei;
 	text-decoration:none;
