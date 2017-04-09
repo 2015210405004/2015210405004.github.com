@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-04-06 14:48:51
+ * @version $Id$
+ */
+.main {        
+    float: left;       
+    width: 100%;   
+ }  
+ .sub {       
+    float: left;        
+    width: 190px;        
+    margin-left: -100%;               
+    position: relative;  
+    left: -190px;  
+}   
+.extra {        
+    float: left;        
+    width: 230px;        
+    margin-left: -230px; 
+    position: relative; 
+    right: -230px;  
+ }
+#bd {        
+    padding: 0 230px 0 190px;   
+ }
