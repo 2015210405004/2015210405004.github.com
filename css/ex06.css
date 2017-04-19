@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-04-06 14:48:51
+ * @version $Id$
+ */
+.ui-ftask{
+    width: 800px;
+    height: 300px;
+    display: flex;
+   flex-wrap: wrap;
+
+}
+.ui-ftask-imgenlarge{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 0%;
+    height: 1000px; 
+    border: 0px;
+
+}.ui-ftask-imgenlarge-img{
+     position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 0px;
+    height: 0px;
+    border: 0px;
+}
+.ui-ftask-img{
+     width: 200px;
+    height: 110px;
+    margin: 10px;
+}
+.imgFilter{filter:blur(8px);}
+.ui-stask{
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.ui-stask-button{
+    width: 300px;
+    height: 50px;
+    display: flex;
+    
+}
+.ui-stask-button-item{
+    width: 100px;
+    height: 50px;
+    background: black;
+}
+.ui-stask-body{
+    width: 600px;
+    height: 300px;
+     border:1px solid ;
+}
+.ui-stask-button-text{
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.ui-stask-button-itemcolor{background: #595656;}
+.ui-ttask{
+	width: 600px;
+	height: 400px;
+	
+	display: flex;
+	flex-direction: column;
+      justify-content: space-around;
+}
+.ui-ttask-item{
+    position: relative;
+    top:-30px;
+	width: 500px;
+	height: 50px;
+	
+    left: -40px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.ui-ttask-item-left{
+    width: 100px;
+    height: 50px;
+    border:1px solid ;
+}
+.ui-ttask-item-body{
+    width: 300px;
+    height: 50px;
+    border:1px solid ;
+    border-left: 0px;
+    border-right: 0px;
+}
+.ui-ttask-item-right{
+    border:1px solid ;
+    width: 100px;
+    height: 50px;
+}
+.ui-ttask-item-text{
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+.ui-ttask-item-addbutton{
+    position: relative;
+    left: 400px;
+    border:1px solid ;
+    width: 100px;
+    background-color: black;
+
+}
+.ui-ttask-item-addbutton-text{
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}

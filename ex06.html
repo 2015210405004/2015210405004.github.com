@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Examples</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+     $(".ui-ftask-imgenlarge").click(function(){
+       $(".ui-ftask-imgenlarge").css("width","0%");
+       $(".ui-ftask-imgenlarge-img").css("height","0px").css("width","0px");
+       $(".task").removeClass( "imgFilter" );
+        })
+    $(".ui-ftask-img").click(function(){
+       $(".ui-ftask-imgenlarge-img").attr("src",$(this)[0].src).css("height","440px").css("width","800px");
+       $(".ui-ftask-imgenlarge").css("width","100%");
+       $(".task").addClass( "imgFilter" );
+          })
+     $(".ui-stask-button-item").click(function(){
+       $(".ui-stask-button-item").removeClass("ui-stask-button-itemcolor");
+       $(this).addClass("ui-stask-button-itemcolor");
+       $(".ui-stask-body").attr("src",$(this)[0].src);
+        })
+     $(".ui-ttask-item-right").click(function(){
+       $(this).parent().parent().remove();
+    });
+     $(".ui-ttask-item-addbutton").click(function(){
+         var item = "<li><div class='ui-ttask-item'>"
+        var itemleft = "<div class='ui-ttask-item-left'></div>"
+        var itembody = "<div class='ui-ttask-item-body'></div>"
+        var itemright = "<div class='ui-ttask-item-right'><p class='ui-ttask-item-text'>Delete</p></div></div>";
+       $(".ui-ttask-list").append(item);
+       $(".ui-ttask-item:last").append(itemleft,itembody,itemright);
+       $(".ui-ttask-item-right").click(function(){
+       $(this).parent().parent().remove();
+    });
+    });
+     });
+    </script>
+    <link href="css/ex06.css" rel="stylesheet">
+  </head>
+  <body>
+  <div class="task">  
+    <div class="ui-ftask">
+      <img class="ui-ftask-img" src="img/city.jpg">
+      <img class="ui-ftask-img" src="img/butterfly.jpg">
+      <img class="ui-ftask-img" src="img/desert.jpg">
+      <img class="ui-ftask-img" src="img/night.jpg">
+      <img class="ui-ftask-img" src="img/water.jpg">
+     <img class="ui-ftask-img" src="img/tiger.jpg">
+    </div>
+    
+    <div class="ui-stask"> 
+    <div class="ui-stask-button">
+    <div class="ui-stask-button-item " src="img/desert.jpg" ><p class="ui-stask-button-text">1</p></div>
+    <div class="ui-stask-button-item"><p class="ui-stask-button-text">2</p></div>
+    <div class="ui-stask-button-item"><p class="ui-stask-button-text">3</p></div>
+     </div>
+     <img class="ui-stask-body"></img>
+    </div>
+    </div>
+    <div class="ui-ftask-imgenlarge">
+      <img class="ui-ftask-imgenlarge-img">
+    </div>
+    <div class="ui-ttask">
+    	<ol class="ui-ttask-list"><li><div class="ui-ttask-item">
+    		<div class="ui-ttask-item-left"></div>
+    		<div class="ui-ttask-item-body"></div>
+    		<div class="ui-ttask-item-right"><p class="ui-ttask-item-text">Delete</p></div>
+    	</div>
+    	<li><div class="ui-ttask-item">
+    		<div class="ui-ttask-item-left"></div>
+    		<div class="ui-ttask-item-body"></div>
+    		<div class="ui-ttask-item-right"><p class="ui-ttask-item-text">Delete</p></div>
+    	</div>
+    	<li><div class="ui-ttask-item">
+        <div class="ui-ttask-item-left"></div>
+        <div class="ui-ttask-item-body"></div>
+        <div class="ui-ttask-item-right"><p class="ui-ttask-item-text">Delete</p></div>
+      </div>
+    	
+    	</ol>
+    </div>
+    <div class="ui-ttask-item-addbutton">
+       <p class="ui-ttask-item-addbutton-text">增加元素</p> 
+      </div>
+  </body>
+</html>

@@ -9,28 +9,26 @@
     <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
     <script type="text/javascript">
     $(document).ready(function(){
-    $(".ui-box-one").click(function(){
-       $(".img").attr("src",$('.img1')[0].src);
-       $(".ui-boxenlarge").css("width","800px")
-       .css("height","440px");
-        })
+    
+    $(".label span").click(function(){
+        $(this).addClass("cur").siblings().removeClass("cur");
+        $(".imgs").removeClass("cur").eq($(this).index()).addClass("cur");
+    })
+
     });
     </script>
     <link href="css/index1.css" rel="stylesheet">
   </head>
   <body>
-    <div class="ui-box">
-      <div class="ui-box-one">
-        <img class="img1" src="img/city.jpg">
-      </div>
-      <div class="ui-box-two"><img class="img1" src="img/butterfly.jpg"></div>
-      <div class="ui-box-three"><img class="img1" src="img/desert.jpg"></div>
-      <div class="ui-box-four"><img class="img1" src="img/night.jpg"></div>
-      <div class="ui-box-five"><img class="img1" src="img/water.jpg"></div>
-      <div class="ui-box-six"><img class="img1" src="img/tiger.jpg"></div>
+
+ <div>
+    <div class="lable">
+            <span class="cur">图一</span><span>图二</span><span>图三</span>      </div>
+    <div class="imgs">
+          <img src="img/night.jpg" class="cur"/>
+          <img src="img/city.jpg" />
+          <img src="img/water.jpg" />
     </div>
-    <div class="ui-boxenlarge">
-      <img class="img">
-    </div>
+</div>
   </body>
 </html>
