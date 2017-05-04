@@ -5,10 +5,10 @@
  * @date    2017-05-01 13:19:33
  * @version $Id$
  */
-body{
-
+.ui-box{
+    margin: auto;
 	margin-top: 10px;
-	width: 800px;
+	width: 1000px;
 	height: 1250px;
 
 /*	// padding: 0;
@@ -351,6 +351,7 @@ text-indent:20px;
 }
 .main-right-push-square{
 	margin-top: 10px;
+	margin-left: 10px;
 	height: 70px;
 	width: 185px;
 	background-color: #666666;
