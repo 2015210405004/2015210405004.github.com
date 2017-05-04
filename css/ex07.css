@@ -122,14 +122,20 @@
  	 border-bottom:1px solid #e0d9cf;
  	 align-items: center;
  }
+ .body-row3-title{
+  border-bottom:1px solid #e0d9cf;
+  height: 44px;
+ }
  .body-row3-item{
+    border-bottom:1px solid #e0d9cf;
  	padding: 0;
  }
  .body-row3-square{
      height: 88px;
  	width: 88px;
  	background-color: #666666;
- 	margin-top: 10px;
+ 	margin-top: 5px;
+  margin-bottom: 5px;
  	display: flex;
  	overflow: hidden;
  }
@@ -171,7 +177,10 @@
  	color: #666666;
  	margin-left: 60px;
  }
-
+.bottom{
+  height: 41px;
+  background-color: #8fc6ea
+}
  strong{
   font-size: 20px;
  }
