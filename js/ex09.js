@@ -5,30 +5,16 @@
  * @version $Id$
  */
 var map = new BMap.Map("map");
-// var point = new BMap.Point(120.151979, 30.249256); // 西湖
 var point = new BMap.Point(120.018158, 30.295574); // 学校
 map.centerAndZoom(point, 17);
-// 滚轮缩放
+
 map.enableScrollWheelZoom();
-// 控件
 map.addControl(new BMap.NavigationControl());
 map.addControl(new BMap.ScaleControl());
 
 map.addControl(new BMap.MapTypeControl());
 
-// 创建可拖拽标注
-// var marker = new BMap.Marker(point);
-// map.addOverlay(marker);
 
-// marker.enableDragging();    
-// marker.addEventListener("dragend", function(e){    
-//  alert("当前位置：" + e.point.lng + ", " + e.point.lat);    
-// })
-
-
-$(init)
-
-function init() {
     var local = new BMap.LocalSearch(map, {
         pageCapacity: 6,
         renderOptions: {
@@ -37,9 +23,9 @@ function init() {
             panel: "results"
         }
     });
-    local.searchNearby("酒店", point);
+    local.searchNearby("酒店", "杭州海曙路58号");
     // ---------- PART 1 --------------------
-    $("body").on("click", "#part1", function() {
+    $("body").on("click", ".part1", function() {
         // $("#p1").toggleClass("active");
         $("#results").fadeIn();
         map.clearOverlays();
@@ -51,10 +37,10 @@ function init() {
                 panel: "results"
             }
         });
-        local.searchNearby("酒店", point);
+        local.searchNearby("酒店", "杭州海曙路58号");
     });
     // ---------- PART 2 --------------------
-    $("body").on("click", "#part2", function() {
+    $("body").on("click", ".part2", function() {
       
         var transit = new BMap.TransitRoute(map, {
             renderOptions: {
@@ -62,10 +48,10 @@ function init() {
                 panel: "results"
             }
         });
-        transit.search("杭州师范大学仓前新校区", "宾馆");
+        transit.search("杭州海曙路58号", "宾馆");
     });
     // ---------- PART 3 --------------------
-    $("body").on("click", "#part3", function() {
+    $("body").on("click", ".part3", function() {
     	schoolmarker();
         
     });
@@ -125,4 +111,3 @@ function OnClick(address,point){
 	});
 }
 
-}
