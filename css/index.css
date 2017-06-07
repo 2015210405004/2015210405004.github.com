@@ -8,17 +8,6 @@
     font-family: Consolas;
     line-height: 50px;
 }
-
-.a{
-	height: 100px;
-	width: 100px;
-	color: red;
-    font-family: Microsoft yahei;
-	text-decoration:none;
-	position: relative;
-	top: 100px;
-	font-size: 50px;
-}
 .ex-title{
 	line-height: 33px;
 }
