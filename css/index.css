@@ -1,18 +1,14 @@
 .title{
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	background: #4F9D9D;
-	height: 100px;
+  margin-bottom: 20px;
+	background: #eee;
+	height: 50px;
 	width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-family: Consolas;
+    line-height: 50px;
 }
-.h1{
-	position: absolute;
-	top:-40px;
-	right: 40%;
-	font-family: Consolas;
-	font-size: 70px;
-}
+
 .a{
 	height: 100px;
 	width: 100px;
@@ -22,4 +18,13 @@
 	position: relative;
 	top: 100px;
 	font-size: 50px;
+}
+.ex-title{
+	line-height: 33px;
+}
+
+.item{
+	display: flex;
+	justify-content: space-between;
+	
 }
